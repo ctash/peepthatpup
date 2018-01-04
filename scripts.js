@@ -39,24 +39,19 @@ function uploadImage( e ){
           console.log( jQxhr );
 
 
-          var array = [];
-          for (var key in data) {
-            array.push({
-              name: key,
-              value: data[key]
+          var keys = Object.keys(data);
+            keys.sort(function(a, b) {
+                return data[b] - data[a]   //inverted comparison
+            }).forEach(function(k) {
+               console.log(data[k]);
             });
-          }
 
-          var sorted = array.sort(function(a, b) {
-            return (a.value < b.value) ? 1 : ((b.value < a.value) ? -1 : 0)
-          });
-
-          console.log(sorted)
+          console.log(keys)
 
           $('.sk-cube-grid').hide();
           $('.checkmark').show();
           $('#analyzing').hide();
-          $('#name').text(sorted[0].name);
+          $('#name').text(keys[0]);
           setTimeout(function(){
             $('#name').slideDown(150);
           }, 1200);
