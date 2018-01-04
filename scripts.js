@@ -4,6 +4,11 @@ function readURL(input) {
         var reader = new FileReader();
 
         reader.onload = function (e) {
+            $('.sk-cube-grid').show();
+            $('.checkmark').hide();
+            $('#analyzing').show();
+            $('#name').hide(150);
+
             $('#preview img').attr('src', e.target.result)
             $('#preview').show()
             $('.btn-text').text("Another photo?")
