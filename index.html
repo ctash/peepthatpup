@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by anonymous (http://jsbin.com/uboqu3/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<script class="jsbin" src="jquery-3.2.1.min.js"></script>
+<script class="jsbin" src="scripts.js"></script>
+<link rel="stylesheet" href="styles.css">
+<meta charset=utf-8 />
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0">
+<title>doggggi</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="container">
+    <div id="preview">
+      <img src="#" />
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+
+      <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+
+      <h4 id="analyzing">Analyzing photo...</h4>
+      <h1 id="name"></h1>
+
+    </div>
+    <div class="fileContainer">
+      <span class="btn-text">Choose a photo</span>
+      <input type='file' onchange="readURL(this);" />
+    </div>
+  </div>
+  <div id="response">
+    <pre></pre>
+  </div>
+  <div class="grass"></div>
+</html>
